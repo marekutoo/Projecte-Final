@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://xaaj82nrh46q"
+=======
+uid="uid://tbto1fxitbxq"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/hat05-spritemap.png-17e24e311c0f6ace7ef8fabe14828223.ctex"
 metadata={
 "vram_texture": false

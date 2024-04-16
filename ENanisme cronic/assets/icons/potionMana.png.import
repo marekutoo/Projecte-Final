@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://2eg6he1rvf7t"
+=======
+uid="uid://djbeula8v1ajg"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/potionMana.png-0c50837aeb3185e1a716eb5cfe1b5065.ctex"
 metadata={
 "vram_texture": false

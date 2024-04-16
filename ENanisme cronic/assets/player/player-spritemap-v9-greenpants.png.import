@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b7gjof62q5m3v"
+=======
+uid="uid://pm6od0gx46hn"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/player-spritemap-v9-greenpants.png-bd7eda8aeb129f9fe8806f64e265b700.ctex"
 metadata={
 "vram_texture": false

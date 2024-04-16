@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b5jsbkpur6ly3"
+=======
+uid="uid://botnamvr0m5ik"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/shield08-spritemap.png-076393cc5b7f691960ebd6bc2b777039.ctex"
 metadata={
 "vram_texture": false

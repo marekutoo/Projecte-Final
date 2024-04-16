@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c6vvva33s8rno"
+=======
+uid="uid://vot4mt0n38iq"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/ring-03.png-ec2a53488bc9a9a9954e928781fdb848.ctex"
 metadata={
 "vram_texture": false

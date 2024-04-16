@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://y3iue6k64qht"
+=======
+uid="uid://c8oa7nt72j8x6"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/book03-spritemap-v9.png-ae63976915eecb593031e58c30d96d58.ctex"
 metadata={
 "vram_texture": false

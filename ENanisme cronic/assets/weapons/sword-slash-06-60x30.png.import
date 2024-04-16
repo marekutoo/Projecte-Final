@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dj7jpx2u77lhl"
+=======
+uid="uid://84f7qkvgv647"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/sword-slash-06-60x30.png-232ec17445951f6cf1b77720b527252c.ctex"
 metadata={
 "vram_texture": false

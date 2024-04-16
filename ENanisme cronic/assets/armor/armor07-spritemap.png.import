@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://ck6bq5x1wj7ih"
+=======
+uid="uid://cg0w8tum7drx2"
+>>>>>>> 27ce0e9067026cc2ef21618321b2d098fc365c04
 path="res://.godot/imported/armor07-spritemap.png-befa2295d0d6743fc4223d1f53b4eeea.ctex"
 metadata={
 "vram_texture": false

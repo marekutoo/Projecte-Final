@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2g83n6da0l52"
-path="res://.godot/imported/icon.svg-be83a861a6ba678d99593aeeb6d0d157.ctex"
+uid="uid://0ckkdhekuulh"
+path="res://.godot/imported/sheet.png-993ed07e10f214135ffa3f66a73c9066.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-be83a861a6ba678d99593aeeb6d0d157.ctex"]
+source_file="res://possibles fondos i imatges/sheet.png"
+dest_files=["res://.godot/imported/sheet.png-993ed07e10f214135ffa3f66a73c9066.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
