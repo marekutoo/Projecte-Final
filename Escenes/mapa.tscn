@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://behry0vg6pdu5"]
+
+[ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4btu"]
+texture = ExtResource("1_wwnrc")
+6:3/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+3:2/0 = 0
+2:2/0 = 0
+1:1/0 = 0
+1:0/0 = 0
+0:0/0 = 0
+1:2/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+2:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ej8mu"]
+sources/0 = SubResource("TileSetAtlasSource_w4btu")
+
+[node name="mapa" type="StaticBody2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ej8mu")
+format = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
