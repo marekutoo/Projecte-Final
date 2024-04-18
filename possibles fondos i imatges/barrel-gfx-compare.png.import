@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture2D"
+uid="uid://chmgokhs8oal1"
+path="res://.godot/imported/barrel-gfx-compare.png-275b74c6bd30ba59e8a2586e86b76676.res"
+
+[deps]
+
+source_file="res://possibles fondos i imatges/barrel-gfx-compare.png"
+dest_files=["res://.godot/imported/barrel-gfx-compare.png-275b74c6bd30ba59e8a2586e86b76676.res"]
+
+[params]
+
+atlas_file=""
+import_mode=0
+crop_to_region=false
+trim_alpha_border_from_region=true
