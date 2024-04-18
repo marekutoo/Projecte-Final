@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=3 uid="uid://dd66m1b87uvwr"]
 
 [ext_resource type="Script" path="res://Scrpits/CharacterBody2D.gd" id="1_l75eu"]
-[ext_resource type="Texture2D" uid="uid://b7gjof62q5m3v" path="res://ENanisme cronic/assets/player/player-spritemap-v9-greenpants.png" id="2_yxqeq"]
+[ext_resource type="Texture2D" uid="uid://dtqux4yfnhlrr" path="res://ENanisme cronic/assets/player/player-spritemap-v9-greenpants.png" id="2_yxqeq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8blbg"]
 atlas = ExtResource("2_yxqeq")
