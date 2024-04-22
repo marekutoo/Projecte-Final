@@ -1,36 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://ouabdt5soe6p"]
-
-[ext_resource type="Shader" path="res://possibles fondos i imatges/Barril.gdshader" id="1_tkin2"]
-[ext_resource type="Texture2D" uid="uid://chmgokhs8oal1" path="res://possibles fondos i imatges/barrel-gfx-compare.png" id="2_kcicg"]
-[ext_resource type="Texture2D" uid="uid://dq2o5xfqxd0a3" path="res://possibles fondos i imatges/barrel-gfx-compare2.png" id="3_si87b"]
+[gd_scene load_steps=2 format=3 uid="uid://ouabdt5soe6p"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sng8g"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_pd4bs"]
-shader = ExtResource("1_tkin2")
-shader_parameter/color = Color(0, 1, 0.917647, 1)
-shader_parameter/epsilon = 0.01
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_sng8g")
-
-[node name="Barrel-gfx-compare2" type="Sprite2D" parent="."]
-texture_filter = 1
-material = SubResource("ShaderMaterial_pd4bs")
-position = Vector2(164, 497)
-texture = ExtResource("2_kcicg")
-
-[node name="Barrel-gfx-compare" type="Sprite2D" parent="."]
-position = Vector2(-59, 466)
-
-[node name="Barrel-gfx-compare3" type="Sprite2D" parent="."]
-position = Vector2(346, 389)
-texture = ExtResource("3_si87b")
-
-[node name="Barrel-gfx-compare4" type="Sprite2D" parent="."]
-position = Vector2(-212, 634)
-texture = ExtResource("3_si87b")
-
-[node name="Barrel-gfx-compare5" type="Sprite2D" parent="."]
-position = Vector2(206, 788)
-texture = ExtResource("2_kcicg")
