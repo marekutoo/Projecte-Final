@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://hx7rf6vg17rq"]
+
+[ext_resource type="Script" path="res://Area2D.gd" id="1_ruxv3"]
+[ext_resource type="Texture2D" uid="uid://bxs0pw0l6py7u" path="res://possibles fondos i imatges/objects.PNG" id="2_5625j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_36lyy"]
+radius = 18.0
+
+[node name="FlorSalta" type="Area2D"]
+script = ExtResource("1_ruxv3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_5625j")
+region_enabled = true
+region_rect = Rect2(301, 1, 46, 31)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_36lyy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

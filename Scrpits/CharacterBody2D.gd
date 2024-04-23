@@ -11,7 +11,7 @@ func _process(delta):
 	velocity.x = 100
 	
 	if Input.is_action_just_pressed("saltar") and is_on_floor():
-		velocity += Vector2.UP * 400
+		salta(400)
 	if Input.is_action_just_pressed("ajupir-se") and is_on_floor():
 		ajupte()
 		
@@ -49,3 +49,7 @@ func aixecat():
 func _on_animacio_animation_finished():
 	if $Animacio.animation == "ajup-te":
 		aixecat()
+
+func salta(intensitat):
+	print("Salto")
+	velocity += Vector2.UP * intensitat 
