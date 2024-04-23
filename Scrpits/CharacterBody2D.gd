@@ -12,8 +12,10 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("saltar") and is_on_floor():
 		velocity += Vector2.UP * 400
-	if Input.is_action_just_pressed("ajupir-se"):# and is_on_floor():
+	if Input.is_action_just_pressed("ajupir-se") and is_on_floor():
 		ajupte()
+		
+
 	
 	velocity += gravetat * delta
 	velocity +=  direccio.normalized() * velocitat
@@ -40,5 +42,10 @@ func aixecat():
 	ajupit = false
 	$FormaAjupit.set_deferred("disabled", true)
 	$FormaDret.set_deferred("disabled", false)
+	$Animacio.play("correr")
 	
-	
+
+
+func _on_animacio_animation_finished():
+	if $Animacio.animation == "ajup-te":
+		aixecat()

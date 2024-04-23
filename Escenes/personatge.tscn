@@ -76,7 +76,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_14anh")
 }],
-"loop": true,
+"loop": false,
 "name": &"ajup-te",
 "speed": 5.0
 }, {
@@ -153,8 +153,9 @@ scale = Vector2(2, 2)
 script = ExtResource("1_4pvv8")
 
 [node name="Animacio" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_epvq1")
-animation = &"ajup-te"
+animation = &"saltar"
 
 [node name="FormaDret" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
@@ -164,3 +165,6 @@ shape = SubResource("RectangleShape2D_xqjl3")
 position = Vector2(0, 13)
 shape = SubResource("RectangleShape2D_kkm7n")
 disabled = true
+
+[connection signal="animation_finished" from="Animacio" to="." method="_on_animacio_animation_finished"]
+[connection signal="animation_looped" from="Animacio" to="." method="_on_animacio_animation_finished"]

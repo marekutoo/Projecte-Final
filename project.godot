@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Projecte Final"
+run/main_scene="res://Escenes/mapa.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
 [input]
