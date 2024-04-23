@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=9 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
 [ext_resource type="Shader" path="res://Scrpits/treu_color_fons.gdshader" id="2_pm15j"]
 [ext_resource type="PackedScene" uid="uid://dd66m1b87uvwr" path="res://Escenes/personatge.tscn" id="4_1w4oe"]
+[ext_resource type="PackedScene" uid="uid://hx7rf6vg17rq" path="res://Escenes/flor_salta.tscn" id="5_w6wfc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6ungo"]
 shader = ExtResource("2_pm15j")
@@ -476,3 +477,6 @@ layer_1/tile_data = PackedInt32Array(720906, 655360, 7, 720907, 720896, 7, 65537
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_1w4oe")]
 position = Vector2(27, 553)
+
+[node name="FlorSalta" parent="." instance=ExtResource("5_w6wfc")]
+position = Vector2(663, 557)
