@@ -49,3 +49,10 @@ func aixecat():
 func _on_animacio_animation_finished():
 	if $Animacio.animation == "ajup-te":
 		aixecat()
+
+func cop_de_puny():
+	$AreaPuny.set_deferred("monitoring", true)
+
+
+func _on_area_puny_body_entered(body):
+	body.explota()
