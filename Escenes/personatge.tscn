@@ -149,6 +149,7 @@ size = Vector2(22, 45)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kkm7n"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(2, 2)
 script = ExtResource("1_4pvv8")
 
 [node name="Animacio" type="AnimatedSprite2D" parent="."]
