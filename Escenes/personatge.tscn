@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://dd66m1b87uvwr"]
 
-[ext_resource type="Script" path="res://Scrpits/CharacterBody2D.gd" id="1_4pvv8"]
+[ext_resource type="Script" path="res://Scrpits/Personatge.gd" id="1_1sowg"]
 [ext_resource type="Texture2D" uid="uid://dtqux4yfnhlrr" path="res://ENanisme cronic/assets/player/player-spritemap-v9-greenpants.png" id="2_v6i56"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cdql4"]
@@ -153,7 +153,7 @@ size = Vector2(10, 20)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(2, 2)
-script = ExtResource("1_4pvv8")
+script = ExtResource("1_1sowg")
 
 [node name="Animacio" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
