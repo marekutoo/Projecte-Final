@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://ucxqua5bk801"]
+
+[ext_resource type="Texture2D" uid="uid://erimvif4dcou" path="res://barril/barril1.png" id="1_ou6l1"]
+[ext_resource type="Script" path="res://barril.gd" id="1_st51m"]
+[ext_resource type="Texture2D" uid="uid://c6xteuotcgnk6" path="res://barril/barril2.png" id="2_bql0k"]
+[ext_resource type="Texture2D" uid="uid://bsaee43jjbvs4" path="res://barril/barril3.png" id="3_w1g4s"]
+[ext_resource type="Texture2D" uid="uid://bh2nqry14vf4t" path="res://barril/barril4.png" id="4_l2yw8"]
+[ext_resource type="Texture2D" uid="uid://rsb67lbmhed3" path="res://barril/barril5.png" id="5_1i4b8"]
+[ext_resource type="Texture2D" uid="uid://bw8tscuxuei5l" path="res://barril/barril6.png" id="6_3la38"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sp5ds"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ou6l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bql0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w1g4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l2yw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1i4b8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3la38")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4otsq"]
+size = Vector2(26, 31)
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(0, 3.5)
+script = ExtResource("1_st51m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sp5ds")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_4otsq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
