@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5lq7nl7ubrj1"]
+
+[ext_resource type="Texture2D" uid="uid://ceesx14gkfk1b" path="res://ENanisme cronic/bg.png" id="1_fhwwm"]
+[ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="2_y877m"]
+
+[node name="MortMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("1_fhwwm")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.502
+anchor_top = 0.222
+anchor_right = 0.502
+anchor_bottom = 0.222
+offset_left = -266.304
+offset_top = -55.856
+offset_right = 265.696
+offset_bottom = 42.144
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.454902, 0.72549, 0.380392, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_fonts/font = ExtResource("2_y877m")
+theme_override_font_sizes/font_size = 81
+text = "YOU DIED"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.581
+anchor_top = 0.469
+anchor_right = 0.581
+anchor_bottom = 0.469
+offset_left = -415.312
+offset_top = -31.912
+offset_right = 250.688
+offset_bottom = 45.088
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_y877m")
+theme_override_font_sizes/font_size = 57
+text = "RETURN TO MENU"
