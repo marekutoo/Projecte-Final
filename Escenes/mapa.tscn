@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=12 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://hx7rf6vg17rq" path="res://Escenes/flor_salta.tscn" id="5_w6wfc"]
 [ext_resource type="PackedScene" uid="uid://ouabdt5soe6p" path="res://Escenes/Barril.tscn" id="6_5fnk5"]
 [ext_resource type="PackedScene" uid="uid://d13a7eqbvl0ot" path="res://Scrpits/ona.tscn" id="7_fgbxi"]
+[ext_resource type="AudioStream" uid="uid://llro8eahhrvd" path="res://ENanisme cronic/Jungle.wav" id="8_23drq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6ungo"]
 shader = ExtResource("2_pm15j")
@@ -496,3 +497,8 @@ scale = Vector2(2, 2)
 texture_filter = 1
 position = Vector2(-472, 262)
 scale = Vector2(3, 4)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_23drq")
+volume_db = 3.0
+autoplay = true
