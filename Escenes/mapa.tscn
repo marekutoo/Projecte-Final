@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=10 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
 [ext_resource type="Shader" path="res://Scrpits/treu_color_fons.gdshader" id="2_pm15j"]
 [ext_resource type="PackedScene" uid="uid://dd66m1b87uvwr" path="res://Escenes/personatge.tscn" id="4_1w4oe"]
 [ext_resource type="PackedScene" uid="uid://hx7rf6vg17rq" path="res://Escenes/flor_salta.tscn" id="5_w6wfc"]
+[ext_resource type="PackedScene" uid="uid://ouabdt5soe6p" path="res://Escenes/Barril.tscn" id="6_5fnk5"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6ungo"]
 shader = ExtResource("2_pm15j")
@@ -485,3 +486,7 @@ collision_mask = 3
 position = Vector2(681, 563)
 collision_layer = 2
 collision_mask = 4
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("6_5fnk5")]
+position = Vector2(923, 538)
+scale = Vector2(2, 2)
