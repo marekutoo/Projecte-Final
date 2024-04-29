@@ -482,16 +482,11 @@ layer_1/tile_data = PackedInt32Array(720906, 655360, 7, 720907, 720896, 7, 65537
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_1w4oe")]
 position = Vector2(189, 538)
 collision_layer = 4
-collision_mask = 3
 
 [node name="FlorSalta" parent="." instance=ExtResource("5_w6wfc")]
 position = Vector2(681, 563)
 collision_layer = 2
 collision_mask = 4
-
-[node name="CharacterBody2D2" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(923, 538)
-scale = Vector2(2, 2)
 
 [node name="Area2D" parent="." instance=ExtResource("7_fgbxi")]
 texture_filter = 1
@@ -502,3 +497,6 @@ scale = Vector2(3, 4)
 stream = ExtResource("8_23drq")
 volume_db = 3.0
 autoplay = true
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("6_5fnk5")]
+position = Vector2(333, 540)

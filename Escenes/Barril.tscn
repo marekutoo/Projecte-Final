@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://ouabdt5soe6p"]
+[gd_scene load_steps=10 format=3 uid="uid://ouabdt5soe6p"]
 
-[ext_resource type="Texture2D" uid="uid://erimvif4dcou" path="res://barril/barril1.png" id="1_100ys"]
-[ext_resource type="Texture2D" uid="uid://c6xteuotcgnk6" path="res://barril/barril2.png" id="2_fod0n"]
-[ext_resource type="Texture2D" uid="uid://bsaee43jjbvs4" path="res://barril/barril3.png" id="3_4a5r7"]
-[ext_resource type="Texture2D" uid="uid://bh2nqry14vf4t" path="res://barril/barril4.png" id="4_rwfvl"]
-[ext_resource type="Texture2D" uid="uid://rsb67lbmhed3" path="res://barril/barril5.png" id="5_tm7aw"]
-[ext_resource type="Texture2D" uid="uid://bw8tscuxuei5l" path="res://barril/barril6.png" id="6_hwx5e"]
+[ext_resource type="Texture2D" uid="uid://cy3604imxcqwv" path="res://barril/barril1.png" id="1_100ys"]
+[ext_resource type="Texture2D" uid="uid://c2fervu23wbgh" path="res://barril/barril2.png" id="2_fod0n"]
+[ext_resource type="Texture2D" uid="uid://ckosoga8ogl38" path="res://barril/barril3.png" id="3_4a5r7"]
+[ext_resource type="Texture2D" uid="uid://cisqf3s0p46k8" path="res://barril/barril4.png" id="4_rwfvl"]
+[ext_resource type="Texture2D" uid="uid://76ucmba5p8qu" path="res://barril/barril5.png" id="5_tm7aw"]
+[ext_resource type="Texture2D" uid="uid://b7kbgggssirrm" path="res://barril/barril6.png" id="6_hwx5e"]
+[ext_resource type="Script" path="res://Escenes/Barril.gd" id="7_oqvkj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sng8g"]
 animations = [{
@@ -29,7 +30,7 @@ animations = [{
 "texture": ExtResource("6_hwx5e")
 }],
 "loop": false,
-"name": &"default",
+"name": &"explosió",
 "speed": 7.0
 }]
 
@@ -37,9 +38,14 @@ animations = [{
 size = Vector2(26, 34)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("7_oqvkj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sng8g")
+animation = &"explosió"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
