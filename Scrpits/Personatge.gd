@@ -67,7 +67,7 @@ func salta(intensitat):
 	velocity += Vector2.UP * intensitat 
 
 
-
-func _on_area_puny_area_entered(barril):
+func _on_area_puny_body_entered(barril):
 	print("ha tocat")
 	barril.explota()
+

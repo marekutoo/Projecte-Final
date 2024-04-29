@@ -30,7 +30,7 @@ animations = [{
 "texture": ExtResource("6_3la38")
 }],
 "loop": true,
-"name": &"default",
+"name": &"explosió",
 "speed": 5.0
 }]
 
@@ -43,6 +43,7 @@ script = ExtResource("1_st51m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sp5ds")
+animation = &"explosió"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3.5)

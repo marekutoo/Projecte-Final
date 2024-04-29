@@ -148,11 +148,12 @@ size = Vector2(22, 45)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kkm7n"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5qx7"]
-size = Vector2(10, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4iqkv"]
+size = Vector2(9.5, 20)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(2, 2)
+collision_mask = 3
 script = ExtResource("1_1sowg")
 
 [node name="Animacio" type="AnimatedSprite2D" parent="."]
@@ -170,12 +171,13 @@ shape = SubResource("RectangleShape2D_kkm7n")
 disabled = true
 
 [node name="AreaPuny" type="Area2D" parent="."]
-monitoring = false
-monitorable = false
+position = Vector2(11, 0)
+collision_layer = 4
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaPuny"]
-position = Vector2(10.5, -2)
-shape = SubResource("RectangleShape2D_f5qx7")
+position = Vector2(-0.25, 0)
+shape = SubResource("RectangleShape2D_4iqkv")
 
 [connection signal="animation_finished" from="Animacio" to="." method="_on_animacio_animation_finished"]
 [connection signal="animation_looped" from="Animacio" to="." method="_on_animacio_animation_finished"]
