@@ -10,4 +10,4 @@ func _process(delta):
 	pass
 
 func explota():
-	$Animacio.play("atac")
+	$Animacio.play("explosió")

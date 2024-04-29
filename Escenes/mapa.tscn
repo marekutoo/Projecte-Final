@@ -493,5 +493,6 @@ position = Vector2(923, 538)
 scale = Vector2(2, 2)
 
 [node name="Area2D" parent="." instance=ExtResource("7_fgbxi")]
+texture_filter = 1
 position = Vector2(-472, 262)
 scale = Vector2(3, 4)

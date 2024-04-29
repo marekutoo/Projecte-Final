@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var barril = $"."
 
 var direccio := Vector2(0,0)
 var velocitat = 200
