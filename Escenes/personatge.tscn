@@ -179,4 +179,4 @@ shape = SubResource("RectangleShape2D_f5qx7")
 
 [connection signal="animation_finished" from="Animacio" to="." method="_on_animacio_animation_finished"]
 [connection signal="animation_looped" from="Animacio" to="." method="_on_animacio_animation_finished"]
-[connection signal="body_entered" from="AreaPuny" to="." method="_on_area_puny_body_entered"]
+[connection signal="area_entered" from="AreaPuny" to="." method="_on_area_puny_area_entered"]
