@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d13a7eqbvl0ot"]
+
+[ext_resource type="Script" path="res://Scrpits/ona.gd" id="1_cuwph"]
+[ext_resource type="Texture2D" uid="uid://dciprf6yan418" path="res://ENanisme cronic/aquatic-5.png" id="2_igxr8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_li08e"]
+size = Vector2(394, 166)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_cuwph")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_igxr8")
+region_enabled = true
+region_rect = Rect2(0, 0, 451.5, 166.1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-24, -2)
+shape = SubResource("RectangleShape2D_li08e")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
