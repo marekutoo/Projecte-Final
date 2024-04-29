@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://llro8eahhrvd"
+path="res://.godot/imported/Jungle.wav-0e2cb161694da68d9184e82f08d9a6b8.sample"
+
+[deps]
+
+source_file="res://ENanisme cronic/Jungle.wav"
+dest_files=["res://.godot/imported/Jungle.wav-0e2cb161694da68d9184e82f08d9a6b8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
