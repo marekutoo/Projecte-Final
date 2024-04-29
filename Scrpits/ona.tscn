@@ -6,7 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_li08e"]
 size = Vector2(394, 166)
 
-[node name="Area2D" type="Area2D"]
+[node name="ona" type="Area2D"]
+collision_mask = 4
 script = ExtResource("1_cuwph")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

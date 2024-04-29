@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=11 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dd66m1b87uvwr" path="res://Escenes/personatge.tscn" id="4_1w4oe"]
 [ext_resource type="PackedScene" uid="uid://hx7rf6vg17rq" path="res://Escenes/flor_salta.tscn" id="5_w6wfc"]
 [ext_resource type="PackedScene" uid="uid://ouabdt5soe6p" path="res://Escenes/Barril.tscn" id="6_5fnk5"]
+[ext_resource type="PackedScene" uid="uid://d13a7eqbvl0ot" path="res://Scrpits/ona.tscn" id="7_fgbxi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6ungo"]
 shader = ExtResource("2_pm15j")
@@ -478,7 +479,7 @@ layer_1/name = "complements"
 layer_1/tile_data = PackedInt32Array(720906, 655360, 7, 720907, 720896, 7, 655371, 720896, 6, 131082, 720896, 6, 5, 655360, 6, 65541, 655360, 7, 6, 720896, 6, 65542, 720896, 7, 327699, 655360, 6, 393235, 655360, 7, 327700, 720896, 6, 393236, 720896, 7)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_1w4oe")]
-position = Vector2(27, 553)
+position = Vector2(189, 538)
 collision_layer = 4
 collision_mask = 3
 
@@ -490,3 +491,7 @@ collision_mask = 4
 [node name="CharacterBody2D2" parent="." instance=ExtResource("6_5fnk5")]
 position = Vector2(923, 538)
 scale = Vector2(2, 2)
+
+[node name="Area2D" parent="." instance=ExtResource("7_fgbxi")]
+position = Vector2(-472, 262)
+scale = Vector2(3, 4)
