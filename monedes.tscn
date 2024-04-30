@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjmban0tv56ew"]
+
+[ext_resource type="Shader" path="res://Scrpits/treu_color_fons.gdshader" id="1_2finu"]
+[ext_resource type="Script" path="res://monedes.gd" id="1_m35ni"]
+[ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="2_k7kpn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dvsi3"]
+shader = ExtResource("1_2finu")
+shader_parameter/color = Color(0.372549, 0.803922, 0.894118, 1)
+shader_parameter/epsilon = 0.01
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tlt0j"]
+radius = 8.0
+
+[node name="monedes" type="Area2D"]
+script = ExtResource("1_m35ni")
+
+[node name="monedes" type="Sprite2D" parent="."]
+texture_filter = 1
+material = SubResource("ShaderMaterial_dvsi3")
+texture = ExtResource("2_k7kpn")
+region_enabled = true
+region_rect = Rect2(129, 112, 15, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_tlt0j")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
