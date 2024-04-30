@@ -173,7 +173,8 @@ disabled = true
 [node name="AreaPuny" type="Area2D" parent="."]
 position = Vector2(11, 0)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 8
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaPuny"]
 position = Vector2(-0.25, 0)

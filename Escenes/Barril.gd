@@ -12,4 +12,8 @@ func _process(delta):
 
 func explota():
 	$AnimacióExplosió.play("explosió")
-	
+
+
+
+func _on_animacióexplosió_animation_finished():
+	queue_free()
