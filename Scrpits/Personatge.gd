@@ -57,13 +57,9 @@ func cop_de_puny():
 	atac = true
 	$AreaPuny.set_deferred("monitoring", true)
 
-
 func salta(intensitat):
-	velocity += Vector2.UP * intensitat 
-
-
+	velocity += Vector2.UP * intensitat
 
 func _on_area_puny_body_entered(Barril):
 	print("ha tocat")
 	Barril.explota()
-
