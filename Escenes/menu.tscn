@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfbafsttfjh2i"]
+[gd_scene load_steps=5 format=3 uid="uid://cfbafsttfjh2i"]
 
 [ext_resource type="Script" path="res://Scrpits/menu.gd" id="1_0hu1k"]
 [ext_resource type="Texture2D" uid="uid://ceesx14gkfk1b" path="res://ENanisme cronic/bg.png" id="2_2tx8r"]
 [ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="3_78ciq"]
+[ext_resource type="AudioStream" uid="uid://br1nb16yslfps" path="res://ENanisme cronic/Menu Theme.mp3" id="4_j13kd"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -86,6 +87,10 @@ theme_override_fonts/font = ExtResource("3_78ciq")
 theme_override_font_sizes/font_size = 57
 text = "QUIT
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_j13kd")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
