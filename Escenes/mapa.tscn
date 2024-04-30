@@ -480,7 +480,7 @@ layer_1/name = "complements"
 layer_1/tile_data = PackedInt32Array(720906, 655360, 7, 720907, 720896, 7, 655371, 720896, 6, 131082, 720896, 6, 5, 655360, 6, 65541, 655360, 7, 6, 720896, 6, 65542, 720896, 7, 327699, 655360, 6, 393235, 655360, 7, 327700, 720896, 6, 393236, 720896, 7)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_1w4oe")]
-position = Vector2(189, 538)
+position = Vector2(86, 531)
 collision_layer = 4
 
 [node name="FlorSalta" parent="." instance=ExtResource("5_w6wfc")]

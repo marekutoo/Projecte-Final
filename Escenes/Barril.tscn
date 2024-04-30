@@ -43,7 +43,7 @@ collision_layer = 2
 collision_mask = 5
 script = ExtResource("7_oqvkj")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimacióExplosió" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sng8g")
 animation = &"explosió"
 

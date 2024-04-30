@@ -47,9 +47,6 @@ func aixecat():
 	$FormaAjupit.set_deferred("disabled", true)
 	$FormaDret.set_deferred("disabled", false)
 
-	
-
-
 func _on_animacio_animation_finished():
 	if $Animacio.animation == "ajup-te":
 		aixecat()
@@ -60,14 +57,14 @@ func cop_de_puny():
 	atac = true
 	$AreaPuny.set_deferred("monitoring", true)
 	$AreaPuny.set_deferred("monitoring", false)
-
-	
+	atac = false
 
 func salta(intensitat):
 	velocity += Vector2.UP * intensitat 
 
 
-func _on_area_puny_body_entered(barril):
+
+func _on_area_puny_body_entered(Barril):
 	print("ha tocat")
-	barril.explota()
+	Barril.explota()
 
