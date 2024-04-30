@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Area2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -10,10 +10,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func explota():
-	$AnimacióExplosió.play("explosió")
 
-
-
-func _on_animacióexplosió_animation_finished():
-	queue_free()
+func _on_body_entered(body):
+	velocitat = move_and_slide(velocitat,Vector2.UP)
+	

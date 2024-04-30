@@ -38,5 +38,6 @@ Atac={
 [layer_names]
 
 2d_physics/layer_1="terra"
-2d_physics/layer_2="roca barril flor"
+2d_physics/layer_2="roca flor"
 2d_physics/layer_3="personatge"
+2d_physics/layer_4="barril"

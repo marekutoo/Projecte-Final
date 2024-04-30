@@ -52,19 +52,14 @@ func _on_animacio_animation_finished():
 		aixecat()
 	elif $Animacio.animation == "atac":
 		atac = false
-
+		$AreaPuny.set_deferred("monitoring", false)
 func cop_de_puny():
 	atac = true
 	$AreaPuny.set_deferred("monitoring", true)
-	$AreaPuny.set_deferred("monitoring", false)
-	atac = false
 
 func salta(intensitat):
-	velocity += Vector2.UP * intensitat 
-
-
+	velocity += Vector2.UP * intensitat
 
 func _on_area_puny_body_entered(Barril):
 	print("ha tocat")
 	Barril.explota()
-
