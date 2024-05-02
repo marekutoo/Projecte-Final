@@ -12,5 +12,5 @@ func _process(delta):
 	position += velocitat * delta
 
 
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	get_tree().change_scene_to_file("res://Escenes/mort_menu.tscn")
