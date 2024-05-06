@@ -610,34 +610,34 @@ position = Vector2(330, 520)
 position = Vector2(828, 521)
 
 [node name="Liana" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 14)
+position = Vector2(976, 2)
 
 [node name="Liana2" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 58)
+position = Vector2(976, 46)
 
 [node name="Liana3" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 102)
+position = Vector2(976, 90)
 
 [node name="Liana4" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 146)
+position = Vector2(976, 134)
 
 [node name="Liana5" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 190)
+position = Vector2(976, 178)
 
 [node name="Liana6" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, -206)
+position = Vector2(976, -218)
 
 [node name="Liana7" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, -162)
+position = Vector2(976, -174)
 
 [node name="Liana8" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, -118)
+position = Vector2(976, -130)
 
 [node name="Liana9" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, -74)
+position = Vector2(976, -86)
 
 [node name="Liana10" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, -30)
+position = Vector2(976, -42)
 
 [node name="Area2D" parent="." instance=ExtResource("7_fgbxi")]
 texture_filter = 1

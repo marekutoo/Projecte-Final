@@ -5,20 +5,27 @@ var velocitat = 200
 var gravetat := Vector2.DOWN * 980
 var ajupit := false
 var atac := false
+var puja := false :
+	set(nou_puja):
+		puja = nou_puja
+		print(puja)
 
 func _process(delta):
-	direccio = Vector2(0,0)
-	velocity.x = 100
+	if puja:
+		velocity = Vector2.ZERO
+		direccio = Vector2.UP
+		velocitat = 100
+	else:
+		direccio = Vector2(0,0)
+		velocity.x = 100
 
-	if Input.is_action_just_pressed("saltar") and is_on_floor():
-		salta(400)
-	if Input.is_action_just_pressed("ajupir-se") and is_on_floor():
-		ajupte()
-	if Input.is_action_just_pressed("Atac") and is_on_floor():
-		cop_de_puny()
-
-	
-	velocity += gravetat * delta
+		if Input.is_action_just_pressed("saltar") and is_on_floor():
+			salta(400)
+		if Input.is_action_just_pressed("ajupir-se") and is_on_floor():
+			ajupte()
+		if Input.is_action_just_pressed("Atac") and is_on_floor():
+			cop_de_puny()
+		velocity += gravetat * delta
 	velocity +=  direccio.normalized() * velocitat
 	move_and_slide()
 	anima()
@@ -36,6 +43,7 @@ func anima():
 			$Animacio.play("ajup-te")
 	else:
 		$Animacio.play("atac")
+	
 func ajupte():
 	ajupit = true
 	$FormaAjupit.set_deferred("disabled", false)
@@ -52,6 +60,7 @@ func _on_animacio_animation_finished():
 	elif $Animacio.animation == "atac":
 		atac = false
 		$AreaPuny.set_deferred("monitoring", false)
+	
 func cop_de_puny():
 	atac = true
 	$AreaPuny.set_deferred("monitoring", true)
@@ -60,5 +69,5 @@ func salta(intensitat):
 	velocity += Vector2.UP * intensitat
 
 func _on_area_puny_body_entered(Barril):
-	print("ha tocat")
 	Barril.explota()
+

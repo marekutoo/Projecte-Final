@@ -8,4 +8,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass	
+	pass
+
+
+func _on_body_entered(body):
+	body.puja = true
+
+
+func _on_body_exited(body):
+	body.puja = false
