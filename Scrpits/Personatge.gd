@@ -6,7 +6,6 @@ var gravetat := Vector2.DOWN * 980
 var ajupit := false
 var atac := false
 
-
 func _process(delta):
 	direccio = Vector2(0,0)
 	velocity.x = 100
