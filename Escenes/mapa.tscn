@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
-[ext_resource type="Texture2D" uid="uid://gxi21shsufwu" path="res://possibles fondos i imatges/tilemap.png" id="2_2m633"]
+[ext_resource type="Texture2D" uid="uid://cmrdmk1syytvm" path="res://Escenes/00.png" id="2_kbyca"]
 [ext_resource type="Shader" path="res://Scrpits/treu_color_fons.gdshader" id="2_pm15j"]
 [ext_resource type="PackedScene" uid="uid://dd66m1b87uvwr" path="res://Escenes/personatge.tscn" id="4_1w4oe"]
 [ext_resource type="PackedScene" uid="uid://hx7rf6vg17rq" path="res://Escenes/flor_salta.tscn" id="5_w6wfc"]
@@ -11,22 +11,110 @@
 [ext_resource type="AudioStream" uid="uid://llro8eahhrvd" path="res://ENanisme cronic/Jungle.wav" id="8_23drq"]
 [ext_resource type="PackedScene" uid="uid://b7877614gtoe0" path="res://liana.tscn" id="9_yi7gf"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pt0al"]
-texture = ExtResource("2_2m633")
-separation = Vector2i(1, 1)
-texture_region_size = Vector2i(18, 18)
-17:6/0 = 0
-18:6/0 = 0
-19:5/0 = 0
-19:6/0 = 0
-16:5/0 = 0
-17:4/0 = 0
-17:3/0 = 0
-19:3/0 = 0
-16:1/0 = 0
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yvqx2"]
+texture = ExtResource("2_kbyca")
+texture_region_size = Vector2i(16, 17)
+7:5/0 = 0
+6:4/0 = 0
+5:4/0 = 0
+4:4/0 = 0
+7:4/0 = 0
+6:3/0 = 0
+5:3/0 = 0
+4:3/0 = 0
+3:3/0 = 0
+2:3/0 = 0
+2:2/0 = 0
+1:2/0 = 0
+0:2/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:0/0 = 0
+1:0/0 = 0
+0:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+4:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+7:3/0 = 0
+1:3/0 = 0
+0:3/0 = 0
+8:4/0 = 0
+3:4/0 = 0
+2:4/0 = 0
+1:4/0 = 0
+0:4/0 = 0
+8:5/0 = 0
+6:5/0 = 0
+5:6/0 = 0
+4:6/0 = 0
+3:6/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+4:8/0 = 0
+3:8/0 = 0
+2:8/0 = 0
+1:8/0 = 0
+3:7/0 = 0
+6:6/0 = 0
+2:5/0 = 0
+1:5/0 = 0
+0:5/0 = 0
+3:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+5:5/0 = 0
+4:5/0 = 0
+2:7/0 = 0
+1:7/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+1:10/0 = 0
+0:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+8:10/0 = 0
+7:10/0 = 0
+6:10/0 = 0
+5:9/0 = 0
+4:9/0 = 0
+7:8/0 = 0
+6:8/0 = 0
+6:7/0 = 0
+5:8/0 = 0
+3:9/0 = 0
+8:8/0 = 0
+7:7/0 = 0
+8:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_qgfr3"]
-sources/0 = SubResource("TileSetAtlasSource_pt0al")
+sources/1 = SubResource("TileSetAtlasSource_yvqx2")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6ungo"]
 shader = ExtResource("2_pm15j")
@@ -493,7 +581,7 @@ position = Vector2(768, 352)
 scale = Vector2(2, 3.236)
 tile_set = SubResource("TileSet_qgfr3")
 format = 2
-layer_0/tile_data = PackedInt32Array(-393214, 1114112, 6, -458750, 1179648, 6, -458749, 1245184, 5, -458748, 1245184, 5, -458747, 1245184, 5, -458746, 1245184, 6, -524286, 1114112, 4, -524287, 1114112, 3, -524285, 1245184, 3, -589822, 1048576, 1)
+layer_0/tile_data = PackedInt32Array(-983041, 1, 0, -917505, 1, 1, -851969, 1, 2, -786433, 1, 3, -720897, 1, 4, -655361, 1, 5, -589825, 1, 6, -524289, 1, 7, -458753, 1, 8, -393217, 1, 9, -327681, 1, 10, -1048576, 65537, 0, -983040, 65537, 1, -917504, 65537, 2, -851968, 65537, 3, -786432, 65537, 4, -720896, 65537, 5, -655360, 65537, 6, -589824, 65537, 7, -524288, 65537, 8, -458752, 65537, 9, -393216, 65537, 10, -1048575, 131073, 0, -983039, 131073, 1, -917503, 131073, 2, -851967, 131073, 3, -786431, 131073, 4, -720895, 131073, 5, -655359, 131073, 6, -589823, 131073, 7, -524287, 131073, 8, -393215, 131073, 10, -1048574, 196609, 0, -983038, 196609, 1, -917502, 196609, 2, -851966, 196609, 3, -786430, 196609, 4, -720894, 196609, 5, -655358, 196609, 6, -589822, 196609, 7, -524286, 196609, 8, -458750, 196609, 9, -393214, 196609, 10, -1048573, 262145, 0, -983037, 262145, 1, -917501, 262145, 2, -851965, 262145, 3, -786429, 262145, 4, -720893, 262145, 5, -655357, 262145, 6, -589821, 262145, 7, -524285, 262145, 8, -458749, 262145, 9, -393213, 262145, 10, -1048572, 327681, 0, -983036, 327681, 1, -917500, 327681, 2, -851964, 327681, 3, -786428, 327681, 4, -720892, 327681, 5, -655356, 327681, 6, -589820, 327681, 7, -524284, 327681, 8, -458748, 327681, 9, -393212, 327681, 10, -1048571, 393217, 0, -983035, 393217, 1, -917499, 393217, 2, -851963, 393217, 3, -786427, 393217, 4, -720891, 393217, 5, -655355, 393217, 6, -589819, 393217, 7, -524283, 393217, 8, -458747, 393217, 9, -393211, 393217, 10, -1048570, 458753, 0, -983034, 458753, 1, -917498, 458753, 2, -851962, 458753, 3, -786426, 458753, 4, -720890, 458753, 5, -655354, 458753, 6, -589818, 458753, 7, -524282, 458753, 8, -458746, 458753, 9, -393210, 458753, 10, -1048569, 524289, 0, -983033, 524289, 1, -917497, 524289, 2, -851961, 524289, 3, -786425, 524289, 4, -720889, 524289, 5, -655353, 524289, 6, -589817, 524289, 7, -524281, 524289, 8, -458745, 524289, 9, -393209, 524289, 10)
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -522,19 +610,34 @@ position = Vector2(330, 520)
 position = Vector2(828, 521)
 
 [node name="Liana" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 34)
+position = Vector2(953, 14)
 
 [node name="Liana2" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 78)
+position = Vector2(953, 58)
 
 [node name="Liana3" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 122)
+position = Vector2(953, 102)
 
 [node name="Liana4" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 166)
+position = Vector2(953, 146)
 
 [node name="Liana5" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(953, 210)
+position = Vector2(953, 190)
+
+[node name="Liana6" parent="." instance=ExtResource("9_yi7gf")]
+position = Vector2(953, -206)
+
+[node name="Liana7" parent="." instance=ExtResource("9_yi7gf")]
+position = Vector2(953, -162)
+
+[node name="Liana8" parent="." instance=ExtResource("9_yi7gf")]
+position = Vector2(953, -118)
+
+[node name="Liana9" parent="." instance=ExtResource("9_yi7gf")]
+position = Vector2(953, -74)
+
+[node name="Liana10" parent="." instance=ExtResource("9_yi7gf")]
+position = Vector2(953, -30)
 
 [node name="Area2D" parent="." instance=ExtResource("7_fgbxi")]
 texture_filter = 1
