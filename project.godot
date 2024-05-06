@@ -14,6 +14,10 @@ config/name="Projecte Final"
 run/main_scene="res://Escenes/mapa.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
+[autoload]
+
+Global="*res://Scrpits/global.gd"
+
 [input]
 
 ajupir-se={

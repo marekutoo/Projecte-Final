@@ -6,7 +6,10 @@ var gravetat := Vector2.DOWN * 980
 var ajupit := false
 var atac := false
 
-
+var monedes := 0:
+	set(noves_monedes):
+		monedes = noves_monedes
+		Global.Contador.text = "Monedes: " + str(monedes)
 
 func _process(delta):
 	direccio = Vector2(0,0)

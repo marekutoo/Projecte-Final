@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=18 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://d13a7eqbvl0ot" path="res://Scrpits/ona.tscn" id="7_fgbxi"]
 [ext_resource type="AudioStream" uid="uid://llro8eahhrvd" path="res://ENanisme cronic/Jungle.wav" id="8_23drq"]
 [ext_resource type="PackedScene" uid="uid://b7877614gtoe0" path="res://liana.tscn" id="9_yi7gf"]
+[ext_resource type="PackedScene" uid="uid://bjmban0tv56ew" path="res://monedes.tscn" id="10_mnx5e"]
+[ext_resource type="PackedScene" uid="uid://dxm7munihf2qa" path="res://Escenes/contasor monedes.tscn" id="11_w1mai"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yvqx2"]
 texture = ExtResource("2_kbyca")
@@ -594,7 +596,7 @@ layer_0/tile_data = PackedInt32Array(786432, 0, 0, 786433, 65536, 0, 786434, 655
 layer_1/name = "complements"
 layer_1/tile_data = PackedInt32Array(720906, 655360, 7, 720907, 720896, 7, 655371, 720896, 6, 5, 655360, 6, 65541, 655360, 7, 6, 720896, 6, 65542, 720896, 7, 327699, 655360, 6, 393235, 655360, 7, 327700, 720896, 6, 393236, 720896, 7)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_1w4oe")]
+[node name="Personatge" parent="." instance=ExtResource("4_1w4oe")]
 position = Vector2(86, 531)
 collision_layer = 4
 
@@ -603,48 +605,75 @@ position = Vector2(685, 555)
 collision_layer = 2
 collision_mask = 4
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("6_5fnk5")]
+[node name="Barril" parent="." instance=ExtResource("6_5fnk5")]
 position = Vector2(330, 520)
 
-[node name="CharacterBody2D3" parent="." instance=ExtResource("6_5fnk5")]
+[node name="Barril2" parent="." instance=ExtResource("6_5fnk5")]
 position = Vector2(828, 521)
 
-[node name="Liana" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Lianes" type="Node2D" parent="."]
+
+[node name="Liana" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, 14)
 
-[node name="Liana2" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana2" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, 58)
 
-[node name="Liana3" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana3" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, 102)
 
-[node name="Liana4" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana4" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, 146)
 
-[node name="Liana5" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana5" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, 190)
 
-[node name="Liana6" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana6" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, -206)
 
-[node name="Liana7" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana7" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, -162)
 
-[node name="Liana8" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana8" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, -118)
 
-[node name="Liana9" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana9" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, -74)
 
-[node name="Liana10" parent="." instance=ExtResource("9_yi7gf")]
+[node name="Liana10" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(953, -30)
 
-[node name="Area2D" parent="." instance=ExtResource("7_fgbxi")]
+[node name="Tsunami" parent="." instance=ExtResource("7_fgbxi")]
 texture_filter = 1
 position = Vector2(-472, 327)
 scale = Vector2(3, 4)
+
+[node name="Monedes" type="Node2D" parent="."]
+position = Vector2(590, 269)
+
+[node name="monedes" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(443, 48)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes2" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(230, 50)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes3" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(-159, 292)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes4" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(389, 293)
+collision_layer = 2
+collision_mask = 4
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_23drq")
 volume_db = 3.0
 autoplay = true
+
+[node name="canvas layer" parent="." instance=ExtResource("11_w1mai")]

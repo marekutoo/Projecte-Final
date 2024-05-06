@@ -13,6 +13,7 @@ shader_parameter/epsilon = 0.01
 radius = 8.0
 
 [node name="monedes" type="Area2D"]
+scale = Vector2(2.5, 2.5)
 script = ExtResource("1_m35ni")
 
 [node name="monedes" type="Sprite2D" parent="."]
