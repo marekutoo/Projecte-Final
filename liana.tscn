@@ -7,7 +7,7 @@
 size = Vector2(11, 46)
 
 [node name="Liana" type="Area2D"]
-modulate = Color(1, 0, 0, 1)
+modulate = Color(1, 0, 0.0156863, 1)
 texture_filter = 1
 script = ExtResource("1_d65t2")
 
@@ -17,6 +17,7 @@ region_enabled = true
 region_rect = Rect2(17.8492, 49, 13.2325, 47)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+modulate = Color(0.866667, 0.45098, 0.282353, 1)
 texture_filter = 1
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_c6a1k")
