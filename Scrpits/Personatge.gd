@@ -10,6 +10,8 @@ var puja := false :
 		puja = nou_puja
 		print(puja)
 
+
+
 func _process(delta):
 	if puja:
 		velocity = Vector2.ZERO
