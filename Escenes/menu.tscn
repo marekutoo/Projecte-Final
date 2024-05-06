@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfbafsttfjh2i"]
+[gd_scene load_steps=7 format=3 uid="uid://cfbafsttfjh2i"]
 
 [ext_resource type="Script" path="res://Scrpits/menu.gd" id="1_0hu1k"]
 [ext_resource type="Texture2D" uid="uid://ceesx14gkfk1b" path="res://ENanisme cronic/bg.png" id="2_2tx8r"]
 [ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="3_78ciq"]
 [ext_resource type="AudioStream" uid="uid://br1nb16yslfps" path="res://ENanisme cronic/Menu Theme.mp3" id="4_j13kd"]
+[ext_resource type="Texture2D" uid="uid://bka6ag44g85vg" path="res://ENanisme cronic/assets/icons/sword1.png" id="5_hnmhb"]
+[ext_resource type="Texture2D" uid="uid://c6if3f1a2ssyk" path="res://ENanisme cronic/assets/icons/statDEFPotion.png" id="6_o8ka4"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -58,45 +60,60 @@ theme_override_fonts/font = ExtResource("3_78ciq")
 theme_override_font_sizes/font_size = 81
 text = "NINJA ESCAPE"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_j13kd")
+autoplay = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.593
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.593
-offset_left = -164.0
-offset_top = -100.264
-offset_right = 164.0
-offset_bottom = 167.736
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -100.0
+offset_right = 140.0
+offset_bottom = 212.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Play" type="Button" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
+
+[node name="Play" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("3_78ciq")
-theme_override_font_sizes/font_size = 57
+theme_override_font_sizes/font_size = 41
 text = "PLAY
 "
 
-[node name="Quit" type="Button" parent="VBoxContainer"]
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_78ciq")
 theme_override_font_sizes/font_size = 41
 text = "QUIT
 "
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Tutorial" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_78ciq")
 theme_override_font_sizes/font_size = 41
 text = "TUTORIAL"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_j13kd")
-autoplay = true
+[node name="Sword1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(216, 216)
+rotation = -3.14159
+scale = Vector2(10, 10)
+texture = ExtResource("5_hnmhb")
 
-[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[node name="StatDefPotion" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(968, 216)
+scale = Vector2(8, 8)
+texture = ExtResource("6_o8ka4")
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

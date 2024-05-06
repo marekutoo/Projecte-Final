@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://djsahuh186u2g"]
+
+[ext_resource type="Texture2D" uid="uid://c8oqkbcbvg46q" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Mountains).png" id="1_e8e0o"]
+
+[node name="menu_pausa" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="2015-02-26[db32](genericPlatformer)(mountains)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("1_e8e0o")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
