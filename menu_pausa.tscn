@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://djsahuh186u2g"]
+[gd_scene load_steps=3 format=3 uid="uid://djsahuh186u2g"]
 
-[ext_resource type="Texture2D" uid="uid://c8oqkbcbvg46q" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Mountains).png" id="1_e8e0o"]
+[ext_resource type="Script" path="res://menu_pausa.gd" id="1_ss4ka"]
+[ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="2_o8way"]
 
 [node name="menu_pausa" type="Control"]
 layout_mode = 3
@@ -9,17 +10,56 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ss4ka")
 
-[node name="2015-02-26[db32](genericPlatformer)(mountains)" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(4.5, 4.5)
-texture = ExtResource("1_e8e0o")
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 462.0
+offset_top = 205.0
+offset_right = -462.0
+offset_bottom = -207.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.207843, 0.513726, 0.462745, 0.215686)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -30.0
+offset_right = 57.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
+
+[node name="resume" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_o8way")
+theme_override_font_sizes/font_size = 20
+text = "CONTINUE"
+
+[node name="restart" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_o8way")
+theme_override_font_sizes/font_size = 20
+text = "restart"
+
+[node name="quit" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_o8way")
+theme_override_font_sizes/font_size = 20
+text = "QUIT"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

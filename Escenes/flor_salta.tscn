@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bxs0pw0l6py7u" path="res://possibles fondos i imatges/objects.PNG" id="2_5625j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_36lyy"]
-radius = 18.0
+radius = 12.6842
 
 [node name="FlorSalta" type="Area2D"]
 scale = Vector2(1.5, 1.5)
