@@ -3127,6 +3127,12 @@ layer_1/tile_data = PackedInt32Array(5, 655360, 6, 327699, 655360, 6, 720907, 72
 position = Vector2(87, 575)
 collision_layer = 4
 
+[node name="Camera2D" type="Camera2D" parent="Personatge"]
+limit_left = 0
+limit_top = 0
+limit_bottom = 800
+limit_smoothed = true
+
 [node name="FlorSalta" parent="." instance=ExtResource("5_w6wfc")]
 position = Vector2(914, 611)
 collision_layer = 2
@@ -3208,5 +3214,6 @@ autoplay = true
 [node name="canvas layer" parent="." instance=ExtResource("11_w1mai")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="menu_pausa" parent="CanvasLayer" instance=ExtResource("13_eonaf")]
