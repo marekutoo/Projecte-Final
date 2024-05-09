@@ -2,9 +2,11 @@ extends Control
 
 func resume():
 	get_tree().paused = false
-	
+	hide()
+
 func pause():
 	get_tree().paused = true
+	show()
 	
 func testESC():
 	if Input.is_action_just_pressed("pausar") and get_tree().paused == false:
