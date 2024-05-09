@@ -75,10 +75,37 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14anh")
 }],
 "loop": false,
 "name": &"ajup-te",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -147,6 +174,7 @@ animations = [{
 size = Vector2(22, 45)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kkm7n"]
+size = Vector2(20, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4iqkv"]
 size = Vector2(9.5, 20)
@@ -159,14 +187,14 @@ script = ExtResource("1_1sowg")
 [node name="Animacio" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_epvq1")
-animation = &"atac"
+animation = &"ajup-te"
 
 [node name="FormaDret" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_xqjl3")
 
 [node name="FormaAjupit" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13)
+position = Vector2(0, 17)
 shape = SubResource("RectangleShape2D_kkm7n")
 disabled = true
 
