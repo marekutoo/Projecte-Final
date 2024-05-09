@@ -10,10 +10,14 @@ var puja := false :
 		puja = nou_puja
 		print(puja)
 
+
 var monedes := 0:
 	set(noves_monedes):
 		monedes = noves_monedes
 		Global.Contador.text = "Monedes: " + str(monedes)
+func recomenca():
+	position = Vector2(87,575)
+
 
 func _process(delta):
 	if puja:
