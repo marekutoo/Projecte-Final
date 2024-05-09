@@ -3105,7 +3105,6 @@ sources/2 = SubResource("TileSetAtlasSource_c3nr3")
 [node name="mapa" type="StaticBody2D"]
 
 [node name="Arbre" type="TileMap" parent="."]
-visible = false
 texture_filter = 1
 position = Vector2(768, 352)
 scale = Vector2(2, 3.236)
@@ -3135,21 +3134,17 @@ limit_bottom = 800
 limit_smoothed = true
 
 [node name="FlorSalta" parent="." instance=ExtResource("5_w6wfc")]
-visible = false
 position = Vector2(914, 611)
 collision_layer = 2
 collision_mask = 4
 
 [node name="Barril" parent="." instance=ExtResource("6_5fnk5")]
-visible = false
 position = Vector2(305, 577)
 
 [node name="Barril2" parent="." instance=ExtResource("6_5fnk5")]
-visible = false
 position = Vector2(703, 575)
 
 [node name="Lianes" type="Node2D" parent="."]
-visible = false
 
 [node name="Liana" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(988, -16)
