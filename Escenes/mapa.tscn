@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=20 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b7877614gtoe0" path="res://liana.tscn" id="9_yi7gf"]
 [ext_resource type="PackedScene" uid="uid://bjmban0tv56ew" path="res://monedes.tscn" id="10_mnx5e"]
 [ext_resource type="PackedScene" uid="uid://dxm7munihf2qa" path="res://Escenes/contasor monedes.tscn" id="11_w1mai"]
+[ext_resource type="PackedScene" uid="uid://djsahuh186u2g" path="res://menu_pausa.tscn" id="13_eonaf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yvqx2"]
 texture = ExtResource("2_kbyca")
@@ -3138,3 +3139,7 @@ volume_db = 3.0
 autoplay = true
 
 [node name="canvas layer" parent="." instance=ExtResource("11_w1mai")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="menu_pausa" parent="CanvasLayer" instance=ExtResource("13_eonaf")]
