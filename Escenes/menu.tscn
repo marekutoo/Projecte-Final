@@ -102,6 +102,12 @@ theme_override_fonts/font = ExtResource("3_78ciq")
 theme_override_font_sizes/font_size = 41
 text = "TUTORIAL"
 
+[node name="Credits" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_78ciq")
+theme_override_font_sizes/font_size = 41
+text = "CREDITS"
+
 [node name="Sword1" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(216, 216)
@@ -117,3 +123,4 @@ texture = ExtResource("6_o8ka4")
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
