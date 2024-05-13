@@ -29,7 +29,7 @@ func _process(delta):
 
 
 		if Input.is_action_just_pressed("saltar") and is_on_floor():
-			salta(400)
+			salta(400,0)
 		if Input.is_action_just_pressed("ajupir-se") and is_on_floor():
 			ajupte()
 		if Input.is_action_just_pressed("Atac") and is_on_floor():
@@ -74,9 +74,9 @@ func cop_de_puny():
 	atac = true
 	$AreaPuny.set_deferred("monitoring", true)
 
-func salta(intensitat, direccióX:=0):
+func salta(intensitat, direccióX):
 	velocity += Vector2.UP * intensitat + Vector2.RIGHT * direccióX 
-
+	direccióX = 0
 func _on_area_puny_body_entered(Barril):
 	Barril.explota()
 
