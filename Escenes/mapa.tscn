@@ -3207,15 +3207,23 @@ collision_mask = 4
 
 [node name="monedes12" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(5769, -103)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes13" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(5958, -106)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes14" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(6248, -97)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes15" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(5710, 328)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes16" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(2504, -50)
@@ -3229,24 +3237,38 @@ collision_mask = 4
 
 [node name="monedes18" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(6877, 46)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes19" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(6923, -2)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes20" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(6971, -50)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes21" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(7082, 334)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes22" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(7143, 333)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes23" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(1494, -50)
+collision_layer = 2
+collision_mask = 4
 
 [node name="monedes24" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(5507, -52)
+collision_layer = 3
+collision_mask = 5
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_23drq")
