@@ -1,7 +1,7 @@
 extends Area2D
 
 
-@export var intensitat_salt := 400
-
+@export var intensitat_salt := 700
+@export var velocitatx := 10000
 func _on_body_entered(body):
-	body.salta(intensitat_salt)
+	body.salta(intensitat_salt, velocitatx)
