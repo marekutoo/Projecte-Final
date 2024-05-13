@@ -8,8 +8,6 @@ var atac := false
 var puja := false :
 	set(nou_puja):
 		puja = nou_puja
-		print(puja)
-
 
 var monedes := 0:
 	set(noves_monedes):
@@ -74,8 +72,8 @@ func cop_de_puny():
 	atac = true
 	$AreaPuny.set_deferred("monitoring", true)
 
-func salta(intensitat):
-	velocity += Vector2.UP * intensitat
+func salta(intensitat, direccióX:=0):
+	velocity += Vector2.UP * intensitat + Vector2.RIGHT * direccióX 
 
 func _on_area_puny_body_entered(Barril):
 	Barril.explota()
