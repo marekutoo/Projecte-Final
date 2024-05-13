@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bo3p3tcymhwht" path="res://ENanisme cronic/nature-paltformer-tileset-16x16.png" id="2_682wr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6a1k"]
-size = Vector2(11, 46)
+size = Vector2(11, 135.75)
 
 [node name="Liana" type="Area2D"]
 modulate = Color(1, 0, 0.0156863, 1)
@@ -13,6 +13,22 @@ collision_mask = 4
 script = ExtResource("1_d65t2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.5, 0)
+scale = Vector2(0.846154, 1)
+texture = ExtResource("2_682wr")
+region_enabled = true
+region_rect = Rect2(17.8492, 49, 13.2325, 47)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(-7.10543e-15, 88)
+scale = Vector2(0.846154, 1)
+texture = ExtResource("2_682wr")
+region_enabled = true
+region_rect = Rect2(17.8492, 49, 13.2325, 47)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-7.10543e-15, 44)
+scale = Vector2(0.846154, 1)
 texture = ExtResource("2_682wr")
 region_enabled = true
 region_rect = Rect2(17.8492, 49, 13.2325, 47)
@@ -20,7 +36,7 @@ region_rect = Rect2(17.8492, 49, 13.2325, 47)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 modulate = Color(0.866667, 0.45098, 0.282353, 1)
 texture_filter = 1
-position = Vector2(-0.5, 0)
+position = Vector2(-1, 44.125)
 shape = SubResource("RectangleShape2D_c6a1k")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
