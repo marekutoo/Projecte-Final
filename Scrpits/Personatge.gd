@@ -24,7 +24,9 @@ func _process(delta):
 		velocitat = 100
 	else:
 		direccio = Vector2(0,0)
-		velocity.x = 100
+		if velocity.x < 100:
+			velocity.x = 100
+
 
 		if Input.is_action_just_pressed("saltar") and is_on_floor():
 			salta(400)
@@ -78,3 +80,5 @@ func salta(intensitat, direccióX:=0):
 func _on_area_puny_body_entered(Barril):
 	Barril.explota()
 
+func _ready():
+	velocity.x = 100
