@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://behry0vg6pdu5"]
+[gd_scene load_steps=18 format=3 uid="uid://behry0vg6pdu5"]
 
 [ext_resource type="Texture2D" uid="uid://cbarfbriedujf" path="res://ENanisme cronic/Preview.png" id="1_e3usc"]
 [ext_resource type="Texture2D" uid="uid://cch063p44dj21" path="res://possibles fondos i imatges/2015-02-26 [DB32](Generic Platformer)(Tileset).png" id="1_wwnrc"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b7877614gtoe0" path="res://liana.tscn" id="9_yi7gf"]
 [ext_resource type="PackedScene" uid="uid://bjmban0tv56ew" path="res://monedes.tscn" id="10_mnx5e"]
 [ext_resource type="PackedScene" uid="uid://dxm7munihf2qa" path="res://Escenes/contasor monedes.tscn" id="11_w1mai"]
+[ext_resource type="PackedScene" uid="uid://bbialxg820tah" path="res://Escenes/bandera_final.tscn" id="13_dwm1x"]
 [ext_resource type="PackedScene" uid="uid://djsahuh186u2g" path="res://menu_pausa.tscn" id="13_eonaf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6ungo"]
@@ -3009,6 +3010,11 @@ layer_0/tile_data = PackedInt32Array(0, 2, 0, 65536, 2, 1, 131072, 2, 2, 196608,
 layer_1/name = "complements"
 layer_1/tile_data = PackedInt32Array(5, 655360, 6, 327699, 655360, 6, 720907, 720898, 11, 720906, 655362, 11, 720909, 655360, 6, 786445, 655360, 7, 720910, 720896, 6, 786446, 720896, 7, 196625, 655360, 6, 262161, 655360, 7, 196626, 720896, 6, 262162, 720896, 7, 720927, 655360, 6, 786463, 655360, 7, 720928, 720896, 6, 786464, 720896, 7, 196646, 655360, 6, 262182, 655360, 7, 196647, 720896, 6, 262183, 720896, 7, 196648, 655360, 6, 262184, 655360, 7, 196649, 720896, 6, 262185, 720896, 7, 458758, 655360, 6, 524294, 655360, 7, 458759, 720896, 6, 524295, 720896, 7, 720934, 655360, 6, 786470, 655360, 7, 720935, 720896, 6, 786471, 720896, 7, 720941, 655360, 6, 786477, 655360, 7, 720942, 720896, 6, 786478, 720896, 7, 458800, 655360, 6, 524336, 655360, 7, 458801, 720896, 6, 524337, 720896, 7, 720954, 655360, 6, 786490, 655360, 7, 720955, 720896, 6, 786491, 720896, 7, 196676, 655360, 6, 262212, 655360, 7, 196677, 720896, 6, 262213, 720896, 7, 720953, 589824, 6, 786489, 589824, 7, 196627, 589824, 6, 262163, 589824, 7, 589829, 589824, 6, 589858, 589824, 6, 524344, 589824, 3, 458811, 589824, 3, 458829, 589824, 3, 262233, 589824, 7, 196697, 589824, 7, 131161, 589824, 7, 65625, 589824, 7, 131162, 589824, 7, 196698, 589824, 7, 196699, 589824, 7, 262235, 589824, 7, 262234, 589824, 7, 262236, 589824, 7, 196702, 786432, 6, 262238, 786432, 7, 196703, 851968, 6, 262239, 851968, 7, 786528, 589824, 5, 720994, 589824, 5, 655460, 589824, 5, 589926, 589824, 5, 524392, 589824, 5, 393328, 589824, 1, 458864, 589824, 2, 327793, 655360, 0, 327794, 655360, 0, 327792, 589824, 0, 458865, 589824, 2, 458866, 655360, 2, 393329, 524288, 7, 393330, 524288, 7, 327795, 720896, 0, 393331, 720896, 1, 458867, 720896, 2, 327805, 1048578, 13, 393341, 1048578, 14, 458877, 1048578, 15, 524413, 1048578, 16, 327806, 1114114, 13, 393342, 1114114, 14, 458878, 1114114, 15, 524414, 1114114, 16, 327807, 1179650, 13, 393343, 1179650, 14, 458879, 1179650, 15, 524415, 1179650, 16, 327808, 1245186, 13, 393344, 1245186, 14, 458880, 1245186, 15, 524416, 1245186, 16, 720985, 655360, 6, 786521, 655360, 7, 720986, 720896, 6, 786522, 720896, 7, 721003, 655360, 6, 786539, 655360, 7, 721004, 720896, 6, 786540, 720896, 7, 458871, 655360, 6, 524407, 655360, 7, 458872, 720896, 6, 524408, 720896, 7, 721029, 655360, 6, 786565, 655360, 7, 721030, 720896, 6, 786566, 720896, 7, 327826, 589824, 7, 458907, 589824, 7, 458908, 589824, 7, 458909, 589824, 7, 393372, 589824, 7, 393373, 589824, 7, 327837, 589824, 7, 262304, 589824, 7, 196768, 589824, 7, 131232, 589824, 7, 65696, 589824, 7)
 
+[node name="Tsunami" parent="." instance=ExtResource("7_fgbxi")]
+texture_filter = 1
+position = Vector2(-605, 470)
+scale = Vector2(3, 4)
+
 [node name="Personatge" parent="." instance=ExtResource("4_1w4oe")]
 position = Vector2(87, 575)
 collision_layer = 4
@@ -3140,11 +3146,6 @@ position = Vector2(5856, -15)
 
 [node name="Liana37" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(5921, -14)
-
-[node name="Tsunami" parent="." instance=ExtResource("7_fgbxi")]
-texture_filter = 1
-position = Vector2(-605, 470)
-scale = Vector2(3, 4)
 
 [node name="Monedes" type="Node2D" parent="."]
 position = Vector2(590, 269)
@@ -3340,3 +3341,7 @@ collision_mask = 4
 position = Vector2(1017, 604)
 collision_layer = 2
 collision_mask = 4
+
+[node name="bandera_final" parent="." instance=ExtResource("13_dwm1x")]
+position = Vector2(10082, 516)
+scale = Vector2(0.75, 0.75)
