@@ -3133,17 +3133,6 @@ limit_top = 0
 limit_bottom = 800
 limit_smoothed = true
 
-[node name="FlorSalta" parent="." instance=ExtResource("5_w6wfc")]
-position = Vector2(914, 611)
-collision_layer = 2
-collision_mask = 4
-
-[node name="Barril" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(491, 375)
-
-[node name="Barril2" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(1236, 374)
-
 [node name="Lianes" type="Node2D" parent="."]
 visible = false
 
@@ -3177,6 +3166,87 @@ position = Vector2(988, -104)
 [node name="Liana10" parent="Lianes" instance=ExtResource("9_yi7gf")]
 position = Vector2(988, -60)
 
+[node name="Liana11" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(2155, 499)
+
+[node name="Liana12" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(2155, 545)
+
+[node name="Liana13" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(2155, 454)
+
+[node name="Liana14" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 391)
+
+[node name="Liana15" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 346)
+
+[node name="Liana16" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 301)
+
+[node name="Liana17" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 256)
+
+[node name="Liana18" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 353)
+
+[node name="Liana19" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 307)
+
+[node name="Liana20" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 261)
+
+[node name="Liana21" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 215)
+
+[node name="Liana22" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 168)
+
+[node name="Liana23" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 122)
+
+[node name="Liana24" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 210)
+
+[node name="Liana25" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5983, 227)
+
+[node name="Liana26" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5983, 181)
+
+[node name="Liana27" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5983, 135)
+
+[node name="Liana28" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5983, 90)
+
+[node name="Liana29" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 76)
+
+[node name="Liana30" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 164)
+
+[node name="Liana31" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 118)
+
+[node name="Liana32" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 72)
+
+[node name="Liana33" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, 26)
+
+[node name="Liana34" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, 30)
+
+[node name="Liana35" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5983, 44)
+
+[node name="Liana36" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5856, -15)
+
+[node name="Liana37" parent="Lianes" instance=ExtResource("9_yi7gf")]
+position = Vector2(5921, -14)
+
 [node name="Tsunami" parent="." instance=ExtResource("7_fgbxi")]
 texture_filter = 1
 position = Vector2(-605, 470)
@@ -3205,6 +3275,84 @@ position = Vector2(819, 142)
 collision_layer = 2
 collision_mask = 4
 
+[node name="monedes5" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(3855, 327)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes6" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(3488, 141)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes7" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(2987, 332)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes8" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(3036, 332)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes9" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(3088, 332)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes10" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(4236, 189)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes11" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(5043, 141)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes12" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(5769, -103)
+
+[node name="monedes13" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(5958, -106)
+
+[node name="monedes14" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(6248, -97)
+
+[node name="monedes15" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(5710, 328)
+
+[node name="monedes16" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(2504, -50)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes17" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(2896, -49)
+collision_layer = 2
+collision_mask = 4
+
+[node name="monedes18" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(6877, 46)
+
+[node name="monedes19" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(6923, -2)
+
+[node name="monedes20" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(6971, -50)
+
+[node name="monedes21" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(7082, 334)
+
+[node name="monedes22" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(7143, 333)
+
+[node name="monedes23" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(1494, -50)
+
+[node name="monedes24" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(5507, -52)
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_23drq")
 volume_db = 3.0
@@ -3217,185 +3365,66 @@ autoplay = true
 [node name="menu_pausa" parent="CanvasLayer" instance=ExtResource("13_eonaf")]
 visible = false
 
-[node name="FlorSalta2" parent="." instance=ExtResource("5_w6wfc")]
-position = Vector2(1633, 409)
-
-[node name="monedes" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(2084, 219)
-
-[node name="Liana" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(2155, 499)
-
-[node name="Liana2" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(2155, 545)
-
-[node name="Liana3" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(2155, 454)
-
-[node name="monedes2" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(3094, 219)
-
-[node name="monedes3" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(3486, 220)
-
-[node name="FlorSalta3" parent="." instance=ExtResource("5_w6wfc")]
-position = Vector2(3431, 647)
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("6_5fnk5")]
+[node name="Barril3" parent="." instance=ExtResource("6_5fnk5")]
 position = Vector2(3978, 372)
 
-[node name="FlorSalta4" parent="." instance=ExtResource("5_w6wfc")]
-position = Vector2(4180, 410)
+[node name="Barrils" type="Node2D" parent="Barril3"]
 
-[node name="monedes4" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(4445, 596)
+[node name="Barril4" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(406.333, 0.666672)
+scale = Vector2(1, 1)
 
-[node name="monedes5" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(4078, 410)
+[node name="Barril5" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(862.667, 65)
+scale = Vector2(1, 1)
 
-[node name="monedes6" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(3577, 601)
+[node name="Barril6" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(930.333, 65)
+scale = Vector2(1, 1)
 
-[node name="monedes7" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(3626, 601)
+[node name="Barril7" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(1158.67, 64.6667)
+scale = Vector2(1, 1)
 
-[node name="monedes8" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(3678, 601)
+[node name="Barril8" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(1190.33, 64.6667)
+scale = Vector2(1, 1)
 
-[node name="monedes9" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(4826, 458)
+[node name="Barril" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(-1162.33, 1)
+scale = Vector2(1, 1)
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(5197, 374)
+[node name="Barril2" parent="Barril3" instance=ExtResource("6_5fnk5")]
+position = Vector2(-914, 0.666672)
+scale = Vector2(1, 1)
 
-[node name="monedes10" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(5633, 410)
+[node name="Flors" type="Node2D" parent="."]
 
-[node name="Liana4" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 391)
-
-[node name="Liana5" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 346)
-
-[node name="Liana6" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 301)
-
-[node name="Liana7" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 256)
-
-[node name="Liana8" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 353)
-
-[node name="Liana9" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 307)
-
-[node name="Liana10" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 261)
-
-[node name="Liana11" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 215)
-
-[node name="Liana12" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 168)
-
-[node name="Liana13" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 122)
-
-[node name="Liana14" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 210)
-
-[node name="Liana15" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5983, 227)
-
-[node name="Liana16" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5983, 181)
-
-[node name="Liana17" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5983, 135)
-
-[node name="Liana18" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5983, 90)
-
-[node name="Liana19" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 76)
-
-[node name="Liana20" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 164)
-
-[node name="Liana21" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 118)
-
-[node name="Liana22" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 72)
-
-[node name="Liana23" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, 26)
-
-[node name="Liana24" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, 30)
-
-[node name="Liana25" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5983, 44)
-
-[node name="Liana26" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5856, -15)
-
-[node name="Liana27" parent="." instance=ExtResource("9_yi7gf")]
-position = Vector2(5921, -14)
-
-[node name="monedes11" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(6097, 217)
-
-[node name="FlorSalta5" parent="." instance=ExtResource("5_w6wfc")]
+[node name="FlorSalta5" parent="Flors" instance=ExtResource("5_w6wfc")]
 position = Vector2(6361, 266)
 
-[node name="FlorSalta6" parent="." instance=ExtResource("5_w6wfc")]
+[node name="FlorSalta6" parent="Flors" instance=ExtResource("5_w6wfc")]
 position = Vector2(6551, 262)
 
-[node name="FlorSalta7" parent="." instance=ExtResource("5_w6wfc")]
+[node name="FlorSalta7" parent="Flors" instance=ExtResource("5_w6wfc")]
 position = Vector2(6700, 265)
 
-[node name="FlorSalta8" parent="." instance=ExtResource("5_w6wfc")]
+[node name="FlorSalta8" parent="Flors" instance=ExtResource("5_w6wfc")]
 position = Vector2(6842, 264)
 
-[node name="monedes12" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(6359, 166)
-
-[node name="monedes13" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(6548, 163)
-
-[node name="monedes14" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(6838, 172)
-
-[node name="monedes15" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(6300, 597)
-
-[node name="CharacterBody2D3" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(6566, 567)
-
-[node name="CharacterBody2D4" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(6769, 567)
-
-[node name="monedes16" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(7467, 315)
-
-[node name="monedes17" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(7513, 267)
-
-[node name="monedes18" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(7561, 219)
-
-[node name="CharacterBody2D5" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(7454, 566)
-
-[node name="CharacterBody2D6" parent="." instance=ExtResource("6_5fnk5")]
-position = Vector2(7549, 566)
-
-[node name="monedes19" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(7672, 603)
-
-[node name="monedes20" parent="." instance=ExtResource("10_mnx5e")]
-position = Vector2(7733, 602)
-
-[node name="FlorSalta9" parent="." instance=ExtResource("5_w6wfc")]
+[node name="FlorSalta9" parent="Flors" instance=ExtResource("5_w6wfc")]
 position = Vector2(7844, 597)
+
+[node name="FlorSalta4" parent="Flors" instance=ExtResource("5_w6wfc")]
+position = Vector2(4180, 410)
+
+[node name="FlorSalta2" parent="Flors" instance=ExtResource("5_w6wfc")]
+position = Vector2(1633, 409)
+
+[node name="FlorSalta3" parent="Flors" instance=ExtResource("5_w6wfc")]
+position = Vector2(3431, 647)
+
+[node name="FlorSalta" parent="Flors" instance=ExtResource("5_w6wfc")]
+position = Vector2(914, 611)
+collision_layer = 2
+collision_mask = 4
