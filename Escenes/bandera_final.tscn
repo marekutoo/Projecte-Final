@@ -78,7 +78,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"bandera",
-"speed": 9.0
+"speed": 15.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7blmt"]
@@ -90,7 +90,7 @@ script = ExtResource("1_rg7ss")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_l7gcp")
 animation = &"bandera"
-frame_progress = 0.506626
+frame_progress = 0.595946
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-21.5, -8)
