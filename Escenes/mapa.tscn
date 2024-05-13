@@ -3260,6 +3260,11 @@ position = Vector2(7143, 333)
 collision_layer = 2
 collision_mask = 4
 
+[node name="monedes25" parent="Monedes" instance=ExtResource("10_mnx5e")]
+position = Vector2(7456, 192)
+collision_layer = 2
+collision_mask = 4
+
 [node name="monedes23" parent="Monedes" instance=ExtResource("10_mnx5e")]
 position = Vector2(1494, -50)
 collision_layer = 2
