@@ -1,7 +1,7 @@
 extends Area2D
 
 @export var escena_Game_over : PackedScene
-var velocitat = Vector2.RIGHT * (80 + Global.ronda*5)
+var velocitat = Vector2.RIGHT * (80 + Global.ronda*10)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

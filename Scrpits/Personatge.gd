@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var direccio := Vector2(0,0)
-var velocitat = (200 + Global.ronda*5)
+var velocitat = (200 + Global.ronda*10)
 var gravetat := Vector2.DOWN * 980
 var ajupit := false
 var atac := false

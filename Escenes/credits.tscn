@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://41an4sebwgn"]
+[gd_scene load_steps=3 format=3 uid="uid://41an4sebwgn"]
 
+[ext_resource type="Script" path="res://Escenes/credits.gd" id="1_boiup"]
 [ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="1_gus0e"]
 
 [node name="credits" type="Control"]
@@ -11,6 +12,7 @@ offset_right = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
+script = ExtResource("1_boiup")
 
 [node name="titol" type="Label" parent="."]
 texture_filter = 1
@@ -60,8 +62,8 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -267.0
-offset_top = -79.0
+offset_left = -287.0
+offset_top = -93.0
 offset_bottom = -21.0
 grow_horizontal = 0
 grow_vertical = 0
@@ -70,4 +72,23 @@ grow_vertical = 0
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_gus0e")
+theme_override_font_sizes/font_size = 40
 text = "Menu"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 36.0
+offset_top = 389.0
+offset_right = -51.0
+offset_bottom = -163.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_gus0e")
+theme_override_font_sizes/font_size = 25
+text = "Fet per: Alex Maresca, Jordi Valero i Oriol Llugany"
+
+[connection signal="pressed" from="VBoxContainer/menu" to="." method="_on_menu_pressed"]

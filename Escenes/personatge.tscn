@@ -169,7 +169,7 @@ script = ExtResource("1_1sowg")
 [node name="Animacio" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_epvq1")
-animation = &"ajup-te"
+animation = &"correr"
 
 [node name="FormaDret" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)

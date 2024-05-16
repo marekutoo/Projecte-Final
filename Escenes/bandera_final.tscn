@@ -92,7 +92,8 @@ script = ExtResource("1_rg7ss")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_l7gcp")
 animation = &"bandera"
-frame_progress = 0.98332
+frame = 3
+frame_progress = 0.698391
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-21.5, -8)
