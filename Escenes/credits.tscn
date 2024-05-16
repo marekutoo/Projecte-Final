@@ -7,6 +7,7 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
@@ -37,14 +38,20 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -97.0
-offset_top = -111.0
-offset_right = 101.0
-offset_bottom = -63.0
+offset_left = -539.0
+offset_top = -168.0
+offset_right = 332.0
+offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_gus0e")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 20
+text = "Musica de menu- Axton Dylan Crolley 
+link: https://creativecommons.org/licenses/by/3.0/ 
+
+musica del joc- Michael Robinson Homingstar
+link: https://creativecommons.org/licenses/by-sa/3.0/
+"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -53,7 +60,14 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -40.0
+offset_left = -267.0
+offset_top = -79.0
+offset_bottom = -21.0
 grow_horizontal = 0
 grow_vertical = 0
+
+[node name="menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Menu"
