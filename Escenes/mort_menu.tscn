@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5lq7nl7ubrj1"]
+[gd_scene load_steps=7 format=3 uid="uid://b5lq7nl7ubrj1"]
 
 [ext_resource type="Script" path="res://Escenes/mort_menu.gd" id="1_sbq5u"]
 [ext_resource type="Texture2D" uid="uid://duqi6qpvio3gf" path="res://possibles fondos i imatges/JWDLx5AZBtI.jpg" id="2_iet56"]
 [ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="2_y877m"]
 [ext_resource type="Texture2D" uid="uid://dorlamc4lsmc1" path="res://ENanisme cronic/assets/icons/book3.png" id="4_1s14n"]
 [ext_resource type="Texture2D" uid="uid://dh4lom3j4xblt" path="res://ENanisme cronic/assets/icons/book1.png" id="5_hw0a0"]
+[ext_resource type="AudioStream" uid="uid://brdeolyoabahh" path="res://ENanisme cronic/death_to_the_king - copia.wav" id="6_21ogv"]
 
 [node name="MortMenu" type="Control"]
 layout_mode = 3
@@ -82,6 +83,10 @@ texture_filter = 1
 position = Vector2(958, 204)
 scale = Vector2(10, 10)
 texture = ExtResource("5_hw0a0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_21ogv")
+autoplay = true
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://djsahuh186u2g"]
 
-[ext_resource type="Script" path="res://menu_pausa.gd" id="1_ss4ka"]
+[ext_resource type="Script" path="res://Scrpits/menu_pausa.gd" id="1_ss4ka"]
 [ext_resource type="FontFile" uid="uid://nile0aads620" path="res://ENanisme cronic/joystix/joystix monospace.otf" id="2_o8way"]
 
 [node name="menu_pausa" type="Control"]

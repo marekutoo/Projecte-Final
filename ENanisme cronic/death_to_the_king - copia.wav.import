@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brdeolyoabahh"
+path="res://.godot/imported/death_to_the_king - copia.wav-f0bab77ce8da1733ba30133d0c3d3b32.sample"
+
+[deps]
+
+source_file="res://ENanisme cronic/death_to_the_king - copia.wav"
+dest_files=["res://.godot/imported/death_to_the_king - copia.wav-f0bab77ce8da1733ba30133d0c3d3b32.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

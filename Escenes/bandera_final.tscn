@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://bbialxg820tah"]
 
-[ext_resource type="Script" path="res://Escenes/bandera_final.gd" id="1_rg7ss"]
+[ext_resource type="Script" path="res://Scrpits/bandera_final.gd" id="1_rg7ss"]
 [ext_resource type="Texture2D" uid="uid://dm6efr30hw4dp" path="res://ENanisme cronic/flag.png" id="1_ylx51"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_35fyq"]

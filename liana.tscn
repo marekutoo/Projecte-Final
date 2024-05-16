@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b7877614gtoe0"]
 
-[ext_resource type="Script" path="res://Liana.gd" id="1_d65t2"]
+[ext_resource type="Script" path="res://Scrpits/Liana.gd" id="1_d65t2"]
 [ext_resource type="Texture2D" uid="uid://bo3p3tcymhwht" path="res://ENanisme cronic/nature-paltformer-tileset-16x16.png" id="2_682wr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6a1k"]
